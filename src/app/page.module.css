@@ -1,6 +1,15 @@
-@media (width >= 648px) {
-    /* .page {
-        padding: 32px;
-        padding-bottom: 80px;
-    } */
+.page {
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (min-width: 648px) {
+    .page {
+        margin-bottom: 80px;
+    }
 }

@@ -27,7 +27,7 @@ export const useProductStore = create<ProductState>((set) => ({
             set({ products: res.data.products, isLoading: false });
         } catch (err) {
             set({
-                error: "Ошибка загрузки, попробуйте еще раз",
+                error: `Ошибка загрузки ${err}, попробуйте еще раз`,
                 isLoading: false,
             });
         }

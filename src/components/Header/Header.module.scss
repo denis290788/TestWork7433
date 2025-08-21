@@ -1,0 +1,63 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    font-family: Inter, sans-serif;
+
+    .logoT {
+        font-size: 54px;
+        line-height: 1;
+        color: white;
+        font-weight: bold;
+    }
+
+    .logoText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1;
+
+        .logoEsty {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .logoShop {
+            font-size: 24px;
+            color: var(--color-secondary);
+            font-weight: bold;
+        }
+    }
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (min-width: 648px) {
+    .header {
+        padding: 2rem;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+}
